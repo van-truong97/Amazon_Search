@@ -20,7 +20,7 @@ public class AmazonSearch {
     void Search() {
         String searchString = "LG";
         Select SearchDropdown = new Select(driver.findElement(By.xpath("//select[@id=\"searchDropdownBox\"]")));
-        SearchDropdown.selectByVisibleText("Video Games");
+        SearchDropdown.selectByVisibleText("Electronics");
         WebElement searchTextbox = driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]"));
         searchTextbox.sendKeys(searchString);
         searchTextbox.sendKeys(Keys.ENTER);
